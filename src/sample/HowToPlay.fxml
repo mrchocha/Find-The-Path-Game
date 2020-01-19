@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: linear-gradient(#141e30, #243b55);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HowToPlayController">
+   <children>
+      <Label fx:id="min" layoutX="1225.0" layoutY="2.0" onMouseClicked="#Minimize" prefHeight="56.0" prefWidth="24.0" text="_" textAlignment="CENTER" textFill="#eee4e4">
+         <font>
+            <Font size="39.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="X" layoutX="1261.0" layoutY="20.0" onMouseClicked="#close" prefHeight="39.0" prefWidth="18.0" text="X" textAlignment="CENTER" textFill="#c60d0d">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXButton fx:id="Back" layoutX="15.0" layoutY="24.0" onMouseClicked="#GoBack" prefHeight="17.0" prefWidth="86.0" ripplerFill="#2196f3" style="-fx-background-radius: 20; -fx-border-radius: 20;" text="Back" textFill="#eeeeee">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fxmls/Back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fx:id="imageview" fitHeight="574.0" fitWidth="1177.0" layoutX="58.0" layoutY="69.0" onMouseClicked="#NextClicked" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton fx:id="Next" layoutX="1139.0" layoutY="653.0" onMouseClicked="#NextClicked" prefHeight="39.0" prefWidth="110.0" ripplerFill="#2196f3" style="-fx-border-color: white; -fx-background-radius: 20; -fx-border-radius: 20;" text="Next&gt;" textFill="#e8e1e1">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="labins" layoutX="181.0" layoutY="661.0" prefHeight="39.0" prefWidth="808.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

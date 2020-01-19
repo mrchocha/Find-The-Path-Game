@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: linear-gradient(#141e30, #243b55);" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControMainScreeen">
+   <children>
+      <ImageView fitHeight="298.0" fitWidth="469.0" layoutX="391.0" layoutY="-8.0">
+         <image>
+            <Image url="@Findthepath.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="391.0" layoutY="290.0" prefHeight="410.0" prefWidth="469.0" style="-fx-background-color: #141e30;" />
+      <Button fx:id="play" layoutX="522.0" layoutY="262.0" mnemonicParsing="false" onMouseClicked="#Playclicked" prefHeight="47.0" prefWidth="207.0" stylesheets="@Style.css" text="Play" />
+      <Label fx:id="min" layoutX="1215.0" layoutY="-8.0" onMouseClicked="#Minimize" prefHeight="56.0" prefWidth="24.0" text="_" textAlignment="CENTER" textFill="#eee4e4">
+         <font>
+            <Font size="39.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="X" layoutX="1251.0" layoutY="10.0" onMouseClicked="#close" prefHeight="39.0" prefWidth="18.0" text="X" textAlignment="CENTER" textFill="#c60d0d">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Button fx:id="play1" layoutX="522.0" layoutY="335.0" mnemonicParsing="false" onMouseClicked="#HowToPlay" prefHeight="47.0" prefWidth="207.0" text="How To Play" />
+      <Button fx:id="play2" layoutX="520.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#ScoreTableClk" prefHeight="47.0" prefWidth="207.0" text="HighScore" />
+      <Button fx:id="play3" layoutX="520.0" layoutY="485.0" mnemonicParsing="false" onMouseClicked="#MakeYourOwnLevelclicked" prefHeight="47.0" prefWidth="207.0" text="Make Your Own Level" />
+      <Button fx:id="play31" layoutX="520.0" layoutY="555.0" mnemonicParsing="false" onMouseClicked="#Credits" prefHeight="47.0" prefWidth="207.0" text="Credits" />
+      <Button fx:id="Quit" layoutX="520.0" layoutY="628.0" mnemonicParsing="false" onMouseClicked="#close" prefHeight="47.0" prefWidth="207.0" text="Quit" />
+   </children>
+</AnchorPane>

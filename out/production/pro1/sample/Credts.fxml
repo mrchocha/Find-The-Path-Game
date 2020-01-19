@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: linear-gradient(#141e30, #243b55);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerCredit">
+   <children>
+      <ImageView fitHeight="298.0" fitWidth="483.0" layoutX="401.0" layoutY="2.0">
+         <image>
+            <Image url="@Findthepath.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="401.0" layoutY="300.0" prefHeight="410.0" prefWidth="483.0" style="-fx-background-color: #141e30;">
+         <children>
+            <Label layoutX="85.0" layoutY="14.0" text="RAHUL CHOCHA" textFill="#fcf0f0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="85.0" layoutY="57.0" text="JEET KARIA" textFill="#fcf0f0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="271.0" layoutY="14.0" text="AU1841076" textFill="#fcf0f0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="271.0" layoutY="57.0" text="AU1841109" textFill="#fcf0f0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="85.0" layoutY="115.0" text="DATA STRUCTURES AND ALGORITHM" textFill="#fcf0f0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="202.0" layoutY="160.0" text="PROJECT" textFill="#fcf0f0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="X" layoutX="1261.0" layoutY="20.0" onMouseClicked="#close" prefHeight="39.0" prefWidth="18.0" text="X" textAlignment="CENTER" textFill="#c60d0d">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="min" layoutX="1225.0" layoutY="2.0" onMouseClicked="#Minimize" prefHeight="56.0" prefWidth="24.0" text="_" textAlignment="CENTER" textFill="#eee4e4">
+         <font>
+            <Font size="39.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="599.0" layoutY="269.0" text="MADE BY" textFill="#fcf0f0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="Back" layoutX="5.0" layoutY="14.0" onMouseClicked="#GoBack" prefHeight="17.0" prefWidth="86.0" ripplerFill="#2196f3" style="-fx-background-radius: 20; -fx-border-radius: 20;" text="Back" textFill="#eeeeee">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fxmls/Back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

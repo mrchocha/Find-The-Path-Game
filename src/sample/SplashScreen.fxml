@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Parant" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SplashScreenControl">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="807.0" layoutX="-7.0" layoutY="-1.0">
+         <image>
+            <Image url="@Findthepath.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lab" layoutX="692.0" layoutY="501.0" prefHeight="38.0" prefWidth="79.0" text="1%" />
+      <Label layoutX="368.0" layoutY="469.0" />
+      <Label layoutX="378.0" layoutY="479.0" />
+      <Label layoutX="378.0" layoutY="479.0" />
+      <ImageView layoutX="410.0" layoutY="456.0">
+         <image>
+            <Image url="@826(1).gif" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="290.0" layoutY="453.0">
+         <image>
+            <Image url="@826(1).gif" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="352.0" layoutY="474.0">
+         <image>
+            <Image url="@826(1).gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
